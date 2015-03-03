@@ -17,7 +17,7 @@
                BlueprintIdentifier = "81BA81441A49DA1800E65899"
                BuildableName = "Bottled.app"
                BlueprintName = "bottled"
-               ReferencedContainer = "container:ParseStarterProject.xcodeproj">
+               ReferencedContainer = "container:bottled.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "81BA81441A49DA1800E65899"
             BuildableName = "Bottled.app"
             BlueprintName = "bottled"
-            ReferencedContainer = "container:ParseStarterProject.xcodeproj">
+            ReferencedContainer = "container:bottled.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -54,7 +54,7 @@
             BlueprintIdentifier = "81BA81441A49DA1800E65899"
             BuildableName = "Bottled.app"
             BlueprintName = "bottled"
-            ReferencedContainer = "container:ParseStarterProject.xcodeproj">
+            ReferencedContainer = "container:bottled.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -72,7 +72,7 @@
             BlueprintIdentifier = "81BA81441A49DA1800E65899"
             BuildableName = "Bottled.app"
             BlueprintName = "bottled"
-            ReferencedContainer = "container:ParseStarterProject.xcodeproj">
+            ReferencedContainer = "container:bottled.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
