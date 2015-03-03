@@ -1,11 +1,11 @@
 //
-//  ParseStarterProject-Bridging-Header.h
+//  bottled-Bridging-Header.h
 //
 //  Copyright 2011-present Parse Inc. All rights reserved.
 //
 
-#ifndef ParseStarterProject_Bridging_Header_h
-#define ParseStarterProject_Bridging_Header_h
+#ifndef bottled_Bridging_Header_h
+#define bottled_Bridging_Header_h
 
 #import <Bolts/Bolts.h>
 
