@@ -27,7 +27,7 @@
         <!--Entry View Controller-->
         <scene sceneID="tRt-GS-iZD">
             <objects>
-                <viewController id="iwV-og-mvR" customClass="EntryViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iwV-og-mvR" customClass="EntryViewController" customModule="Bottled" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GGM-Vi-DTa"/>
                         <viewControllerLayoutGuide type="bottom" id="YSN-wu-hZb"/>
@@ -123,7 +123,7 @@
         <!--Login Controller-->
         <scene sceneID="JiK-ZU-gaQ">
             <objects>
-                <viewController id="je2-w3-AsL" customClass="LoginController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="je2-w3-AsL" customClass="LoginController" customModule="Bottled" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h7p-2L-xeL"/>
                         <viewControllerLayoutGuide type="bottom" id="fnN-ga-ILd"/>
@@ -181,7 +181,7 @@
         <!--Login Controller-->
         <scene sceneID="YBz-nb-cvT">
             <objects>
-                <viewController id="ElQ-NG-sPs" customClass="LoginController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ElQ-NG-sPs" customClass="LoginController" customModule="Bottled" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0VS-5K-E4f"/>
                         <viewControllerLayoutGuide type="bottom" id="alW-9r-lFl"/>
@@ -263,10 +263,10 @@
             </objects>
             <point key="canvasLocation" x="1789" y="241"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="fCG-VV-IhV">
             <objects>
-                <viewController id="mcp-CL-lCF" sceneMemberID="viewController">
+                <viewController id="mcp-CL-lCF" customClass="MapViewController" customModule="Bottled" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IQT-7Q-tPw"/>
                         <viewControllerLayoutGuide type="bottom" id="KIJ-ZC-Djr"/>
@@ -274,10 +274,19 @@
                     <view key="view" contentMode="scaleToFill" id="3cI-1f-sFG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NK5-ND-jGB" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Gg-Y9-nKT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="mapView" destination="NK5-ND-jGB" id="Jio-fv-TyR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMu-rT-8tN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

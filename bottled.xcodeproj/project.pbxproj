@@ -10,6 +10,9 @@
 		4A770A2E1AA530CE007F03C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A770A2C1AA530CE007F03C7 /* Main.storyboard */; };
 		4A770A301AA5315B007F03C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A770A2F1AA5315B007F03C7 /* LoginViewController.swift */; };
 		4A770A321AA5354B007F03C7 /* UIUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A770A311AA5354B007F03C7 /* UIUtil.swift */; };
+		4A770A431AA54F89007F03C7 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A770A421AA54F89007F03C7 /* FBMissingSymbols.m */; };
+		4A770A451AA5507B007F03C7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A770A441AA5507B007F03C7 /* MapViewController.swift */; };
+		7408FC95F926CB56101CF9B7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3137D7736A62BCBE7E2675 /* libPods.a */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
 		81BA814D1A49DA1800E65899 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814C1A49DA1800E65899 /* EntryViewController.swift */; };
 		81BA81521A49DA1800E65899 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BA81511A49DA1800E65899 /* Images.xcassets */; };
@@ -29,6 +32,11 @@
 		4A770A2D1AA530CE007F03C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A770A2F1AA5315B007F03C7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4A770A311AA5354B007F03C7 /* UIUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtil.swift; sourceTree = "<group>"; };
+		4A770A3E1AA54EF2007F03C7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		4A770A401AA54EF8007F03C7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4A770A421AA54F89007F03C7 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMissingSymbols.m; sourceTree = "<group>"; };
+		4A770A441AA5507B007F03C7 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		526BA0268CB75E43DF79DAC0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		81BA81451A49DA1800E65899 /* Bottled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bottled.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BA81491A49DA1800E65899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81BA814A1A49DA1800E65899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,8 @@
 		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		81BA81801A49E10C00E65899 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		81BA81821A49E27F00E65899 /* bottled-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bottled-Bridging-Header.h"; sourceTree = "<group>"; };
+		841FB41270DFCC2C011E9D40 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CD3137D7736A62BCBE7E2675 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +72,29 @@
 				81BA81731A49DB6800E65899 /* ParseFacebookUtils.framework in Frameworks */,
 				81BA81811A49E10C00E65899 /* ParseUI.framework in Frameworks */,
 				81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */,
+				7408FC95F926CB56101CF9B7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56AE7586E370D644DA5B8166 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				526BA0268CB75E43DF79DAC0 /* Pods.debug.xcconfig */,
+				841FB41270DFCC2C011E9D40 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		81BA813C1A49DA1800E65899 = {
 			isa = PBXGroup;
 			children = (
 				81BA81471A49DA1800E65899 /* bottled */,
 				81BA816A1A49DB5600E65899 /* Frameworks */,
 				81BA81461A49DA1800E65899 /* Products */,
+				56AE7586E370D644DA5B8166 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,7 +109,9 @@
 		81BA81471A49DA1800E65899 /* bottled */ = {
 			isa = PBXGroup;
 			children = (
+				4A770A421AA54F89007F03C7 /* FBMissingSymbols.m */,
 				4A770A2C1AA530CE007F03C7 /* Main.storyboard */,
+				4A770A441AA5507B007F03C7 /* MapViewController.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* EntryViewController.swift */,
 				4A770A2F1AA5315B007F03C7 /* LoginViewController.swift */,
@@ -112,12 +135,15 @@
 		81BA816A1A49DB5600E65899 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A770A401AA54EF8007F03C7 /* Social.framework */,
+				4A770A3E1AA54EF2007F03C7 /* Accounts.framework */,
 				81BA816B1A49DB6800E65899 /* Bolts.framework */,
 				81BA816C1A49DB6800E65899 /* Parse.framework */,
 				81BA816D1A49DB6800E65899 /* ParseCrashReporting.framework */,
 				81BA816E1A49DB6800E65899 /* ParseFacebookUtils.framework */,
 				81BA81801A49E10C00E65899 /* ParseUI.framework */,
 				81BA81751A49E0C500E65899 /* System Frameworks */,
+				CD3137D7736A62BCBE7E2675 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,10 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "bottled" */;
 			buildPhases = (
+				D60E7B93A777EAE9FEF0AF1E /* Check Pods Manifest.lock */,
 				81BA81411A49DA1800E65899 /* Sources */,
 				81BA81421A49DA1800E65899 /* Frameworks */,
 				81BA81431A49DA1800E65899 /* Resources */,
 				81CC85E11A49F6D40076DE19 /* Upload Symbol Files */,
+				421EB0A7BC56137E15420275 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,6 +228,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		421EB0A7BC56137E15420275 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		81CC85E11A49F6D40076DE19 /* Upload Symbol Files */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +257,21 @@
 			shellPath = /bin/sh;
 			shellScript = "# This script will upload symbol files for your application,\n# so all your crash reports are going to be symbolicated\n\n# Important!\n# Before using the script, please initialize CloudCode folder and replace <path_to_cloudcode_folder> with the path to it\n#\n# Read more on Parse.com - https://parse.com/apps/quickstart#analytics/crashreporting/ios/\n############################################################\n\n\n# export PATH=/usr/local/bin:$PATH\n# cd <path_to_cloudcode_folder>\n\n# parse symbols \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\"\n";
 		};
+		D60E7B93A777EAE9FEF0AF1E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,8 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A770A301AA5315B007F03C7 /* LoginViewController.swift in Sources */,
+				4A770A451AA5507B007F03C7 /* MapViewController.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* EntryViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				4A770A431AA54F89007F03C7 /* FBMissingSymbols.m in Sources */,
 				4A770A321AA5354B007F03C7 /* UIUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +383,7 @@
 		};
 		81BA81651A49DA1800E65899 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 526BA0268CB75E43DF79DAC0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -339,6 +400,7 @@
 		};
 		81BA81661A49DA1800E65899 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 841FB41270DFCC2C011E9D40 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
