@@ -13,4 +13,5 @@ public func notifyError(message:String!, controller: UIViewController!) {
     let cancelAction: UIAlertAction! = UIAlertAction(title: "cancel", style: .Cancel, handler:nil)
     alert.addAction(cancelAction)
     controller.presentViewController(alert, animated: true, completion: nil)
+	println("asdf");
 }
